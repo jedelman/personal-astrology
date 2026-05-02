@@ -1,0 +1,421 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+
+  <!-- ── Hero ────────────────────────────────────────────────────────── -->
+  <section class="hero">
+    <img
+      src="https://placehold.co/1600x900/14110D/F9F6F0?text=Hero+Image"
+      alt="Celestial chart"
+      class="hero-bg"
+    />
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="eyebrow">Humanistic Astrology</p>
+      <h1>Jason Edelman</h1>
+      <p class="hero-sub">A guide through the larger patterns of your life</p>
+      <a href="#book" class="btn btn-primary">Book a Consultation</a>
+    </div>
+  </section>
+
+  <!-- ── Approach ─────────────────────────────────────────────────────── -->
+  <section class="approach">
+    <div class="container approach-grid">
+      <div class="approach-text">
+        <p class="section-label">The Approach</p>
+        <h2>Your chart as compass, not verdict</h2>
+        <p>
+          Most people come to astrology expecting answers. What they find
+          instead is a more useful thing: a richer set of questions — and the
+          tools to live inside them with more clarity.
+        </p>
+        <p>
+          Jason's practice is rooted in the humanistic tradition, which treats
+          the birth chart not as fixed destiny but as a map of potential.
+          Rather than reading your chart <em>to</em> you, he acts as a guide
+          through it — drawing out what you already sense about your own life,
+          and helping you see it from a wider angle.
+        </p>
+        <p>
+          The work is about developing <strong>perspective</strong>,
+          <strong>empathy</strong>, and above all, <strong>agency</strong>: the
+          capacity to move through your life as its author, not its subject.
+        </p>
+      </div>
+      <div class="approach-image">
+        <img
+          src="https://placehold.co/600x700/F0EBE2/7A7266?text=Approach+Image"
+          alt="Astrological chart detail"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Pillars ──────────────────────────────────────────────────────── -->
+  <section class="pillars">
+    <div class="container">
+      <p class="section-label centered">What you'll develop</p>
+      <h2 class="pillars-heading centered">Three things that endure</h2>
+      <div class="pillars-grid">
+        <div class="pillar">
+          <h3>Perspective</h3>
+          <p>
+            The birth chart is a long view — decades, not days. Working with it
+            cultivates the ability to step back from the immediate and see the
+            larger arc of what you're moving through.
+          </p>
+        </div>
+        <div class="pillar">
+          <h3>Empathy</h3>
+          <p>
+            Understanding how your own nature was shaped — its gifts, its
+            shadows, its timing — tends to soften judgment. Toward yourself
+            first, and then, almost inevitably, toward others.
+          </p>
+        </div>
+        <div class="pillar">
+          <h3>Agency</h3>
+          <p>
+            The goal isn't prediction. It's authorship. To understand the
+            conditions you're working within well enough to make deliberate,
+            grounded choices inside them.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── About ────────────────────────────────────────────────────────── -->
+  <section class="about">
+    <div class="container about-grid">
+      <div class="about-image">
+        <img
+          src="https://placehold.co/500x600/DDD6CA/7A7266?text=Portrait"
+          alt="Jason Edelman"
+        />
+      </div>
+      <div class="about-text">
+        <p class="section-label">About Jason</p>
+        <h2>A practitioner, not a prophet</h2>
+        <p>
+          [Jason — add a paragraph or two here about your background, how you
+          came to astrology, and what draws you to the humanistic tradition. A
+          potential client will want to understand who they'd be working with
+          before they book.]
+        </p>
+        <p>
+          Sessions are held over video. Initial consultations are 90 minutes;
+          ongoing work is typically 60 minutes, scheduled at whatever cadence
+          fits your life.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Book ─────────────────────────────────────────────────────────── -->
+  <section class="book" id="book">
+    <div class="container book-content">
+      <h2>Begin with a conversation</h2>
+      <p>
+        An initial consultation is a chance to meet, explore a question or
+        moment you're navigating, and decide together whether ongoing work makes
+        sense. No commitment required.
+      </p>
+      <a href="#" class="btn btn-gold">Schedule Your Consultation</a>
+      <p class="book-note">
+        Booking link coming soon — reach out at
+        <a href="mailto:edelmanja@gmail.com">edelmanja@gmail.com</a> in the meantime.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── Footer ───────────────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Jason Edelman &middot; Humanistic Astrology</p>
+    </div>
+  </footer>
+
+</Layout>
+
+<style>
+  /* ── Shared layout helpers ── */
+  .container {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .section-label {
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1rem;
+  }
+
+  .centered {
+    text-align: center;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 0.9rem 2.25rem;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: opacity 0.2s ease;
+  }
+
+  .btn:hover { opacity: 0.82; }
+
+  .btn-primary {
+    background: var(--accent);
+    color: #F9F6F0;
+  }
+
+  .btn-gold {
+    background: var(--accent);
+    color: #F9F6F0;
+  }
+
+  /* ── Hero ── */
+  .hero {
+    position: relative;
+    height: 100svh;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(20, 17, 13, 0.5) 0%,
+      rgba(20, 17, 13, 0.42) 55%,
+      rgba(20, 17, 13, 0.72) 100%
+    );
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    color: #F9F6F0;
+    max-width: 680px;
+    padding: 2rem;
+  }
+
+  .eyebrow {
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(249, 246, 240, 0.6);
+    margin-bottom: 1.25rem;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(3rem, 9vw, 6rem);
+    margin-bottom: 1rem;
+    letter-spacing: -0.01em;
+  }
+
+  .hero-sub {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: clamp(1.1rem, 2.5vw, 1.45rem);
+    color: rgba(249, 246, 240, 0.78);
+    margin-bottom: 2.75rem;
+  }
+
+  /* ── Approach ── */
+  .approach {
+    padding: 8rem 0;
+  }
+
+  .approach-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+
+  .approach-text h2 {
+    font-size: clamp(1.9rem, 3.5vw, 2.75rem);
+    margin-bottom: 2rem;
+  }
+
+  .approach-text p {
+    color: var(--text-muted);
+    font-size: 1.0625rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .approach-text p:last-child { margin-bottom: 0; }
+
+  .approach-text strong {
+    color: var(--text);
+    font-weight: 500;
+  }
+
+  .approach-image img {
+    width: 100%;
+    aspect-ratio: 6 / 7;
+    object-fit: cover;
+  }
+
+  /* ── Pillars ── */
+  .pillars {
+    background: var(--surface);
+    padding: 8rem 0;
+  }
+
+  .pillars-heading {
+    font-size: clamp(1.9rem, 3.5vw, 2.75rem);
+    margin-bottom: 4.5rem;
+  }
+
+  .pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+
+  .pillar h3 {
+    font-size: 1.625rem;
+    padding-bottom: 0.875rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .pillar p {
+    color: var(--text-muted);
+    font-size: 1rem;
+  }
+
+  /* ── About ── */
+  .about {
+    padding: 8rem 0;
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    gap: 5rem;
+    align-items: start;
+  }
+
+  .about-image img {
+    width: 100%;
+    aspect-ratio: 5 / 6;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .about-text h2 {
+    font-size: clamp(1.9rem, 3.5vw, 2.75rem);
+    margin-bottom: 2rem;
+  }
+
+  .about-text p {
+    color: var(--text-muted);
+    font-size: 1.0625rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .about-text p:last-child { margin-bottom: 0; }
+
+  /* ── Book ── */
+  .book {
+    background: var(--dark);
+    color: #F9F6F0;
+    padding: 8rem 0;
+    text-align: center;
+  }
+
+  .book-content {
+    max-width: 600px;
+  }
+
+  .book h2 {
+    font-size: clamp(2.25rem, 5vw, 3.25rem);
+    margin-bottom: 1.25rem;
+  }
+
+  .book p {
+    color: rgba(249, 246, 240, 0.65);
+    font-size: 1.0625rem;
+    margin-bottom: 2.75rem;
+  }
+
+  .book-note {
+    margin-top: 1.5rem;
+    font-size: 0.875rem !important;
+    margin-bottom: 0 !important;
+  }
+
+  .book-note a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  /* ── Footer ── */
+  .footer {
+    background: var(--dark);
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+    padding: 2rem 0;
+  }
+
+  .footer p {
+    color: rgba(249, 246, 240, 0.3);
+    font-size: 0.8125rem;
+    text-align: center;
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 800px) {
+    .approach-grid,
+    .about-grid {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+
+    .about-image {
+      order: -1;
+    }
+
+    .pillars-grid {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+
+    .approach,
+    .pillars,
+    .about,
+    .book {
+      padding: 5rem 0;
+    }
+  }
+</style>
